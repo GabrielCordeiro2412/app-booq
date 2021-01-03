@@ -19,34 +19,18 @@ export default function user() {
        <View style={styles.body}>
          <TouchableOpacity style={styles.btnAction}>
             <Text style={styles.descBtn}>Editar Informações</Text>
-            <Image
-            source={require('../../assets/editar.png')}
-            style={styles.imgBtn}
-            />
          </TouchableOpacity>
 
          <TouchableOpacity style={styles.btnAction}>
             <Text style={styles.descBtn}>Configurações</Text>
-            <Image
-            source={require('../../assets/engrenagem.png')}
-            style={styles.imgBtn}
-            />
          </TouchableOpacity>
 
          <TouchableOpacity style={styles.btnAction}>
             <Text style={styles.descBtn}>Mande seu Livro</Text>
-            <Image
-            source={require('../../assets/file.png')}
-            style={styles.imgBtn}
-            />
          </TouchableOpacity>
 
          <TouchableOpacity style={styles.btnAction}>
             <Text style={styles.descBtn}>Seus Livros</Text>
-            <Image
-            source={require('../../assets/files.png')}
-            style={styles.imgBtn}
-            />
          </TouchableOpacity>
        </View>
    </View>

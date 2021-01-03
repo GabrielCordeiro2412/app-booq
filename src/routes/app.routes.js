@@ -51,14 +51,14 @@ function TabNav(){
       screenOptions={({route}) => ({
         tabBarIcon: ({ color, size }) => {
           const {name} = icons[route.name]
-          return <Feather name={name} color={color} size={35}/>
+          return <Feather name={name} color={color} size={30}/>
         }
       })}
       tabBarOptions={{
         style:{
-          height: 60,
-          borderTopLeftRadius: 30,
-          borderTopRightRadius: 30,
+          height: 50,
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
           position: 'absolute',
           backgroundColor: '#8CA5FF'
         },

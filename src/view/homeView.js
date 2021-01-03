@@ -22,7 +22,12 @@ function teste(){
 
  return (
    <View style={{backgroundColor: '#E5EEFF', flex: 1}}>
-    <View style={styles.pesquisaView}>
+       <View style={styles.header}>
+        <Image
+            style={styles.logoApp}
+            source={require('../../assets/logoAmazon.png')}
+        />
+        <View style={styles.pesquisaView}>
         <TextInput
             style={styles.pesquisa}
             placeholder="Pesquise por Livros, Categorias..."
@@ -33,6 +38,8 @@ function teste(){
             <Feather name="search" color="#000" size={35}/>
         </TouchableOpacity>
     </View>
+       </View>
+    <View style={styles.principal}>
     <ScrollView showsVerticalScrollIndicator={false} refreshControl={<RefreshControl
     refreshing={refresh}
     onRefresh={teste}
@@ -163,6 +170,44 @@ function teste(){
             </View>
         </ScrollView>
     </View>
+
+    <View style={styles.maisLidos}>
+        <Text style={styles.txvLidos}>Os Mais Lidos</Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <View>
+                <TouchableOpacity style={styles.livro}>
+                    <Image
+                    source={require('../../assets/crise.jpg')}
+                    style={styles.imgLivro}
+                    />
+                </TouchableOpacity>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.livro}>
+                    <Image
+                    source={require('../../assets/cortico.jpg')}
+                    style={styles.imgLivro}
+                    />
+                </TouchableOpacity>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.livro}>
+                    <Image
+                    source={require('../../assets/livro.jpg')}
+                    style={styles.imgLivro}
+                    />
+                </TouchableOpacity>
+            </View>
+            <View>
+                <TouchableOpacity style={styles.livro}>
+                    <Image
+                    source={require('../../assets/crise.jpg')}
+                    style={styles.imgLivro}
+                    />
+                </TouchableOpacity>
+            </View>
+        </ScrollView>
+    </View>
     
 
         </View>
@@ -173,6 +218,9 @@ function teste(){
     
     
     </ScrollView>
+
+    </View>
+    
        
    </View>
   );
@@ -193,7 +241,7 @@ const styles = StyleSheet.create({
         width: '90%',
         borderRadius: 10,
         alignSelf: 'center',
-        marginTop: '8%',
+        marginTop: '3%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         shadowColor: '#000',
@@ -212,7 +260,9 @@ const styles = StyleSheet.create({
     },
     categoriaView:{
         alignSelf: 'center',
-        width: '90%',
+        width: '100%',
+        marginLeft: '10%',
+        paddingRight: '5%'
         
     },
     txvCategoria:{
@@ -241,7 +291,8 @@ const styles = StyleSheet.create({
         shadowRadius: 10,
         elevation: 4,
         marginLeft: 5,
-        marginRight: 5
+        marginRight: 5,
+        marginBottom: 7,
     },
     txvTitulo:{
         fontSize: 14,
@@ -249,8 +300,11 @@ const styles = StyleSheet.create({
     },
     maisLidos:{
         alignSelf: 'center',
-        marginTop: '8%',
-        width: '90%',
+        marginTop: '5%',
+        width: '100%',
+        marginLeft: '10%',
+        paddingRight: '5%',
+        paddingBottom: '5%'
     },
     txvLidos:{
         fontFamily: 'Montserrat_700Bold',
@@ -274,7 +328,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 4,
-        marginBottom: 10,
+        marginBottom: 7,
         marginLeft: 5
     },
     imgLivro:{
@@ -290,5 +344,17 @@ const styles = StyleSheet.create({
     },
     scroll:{
         marginBottom: '15%'
+    },
+    principal:{
+        paddingBottom: '20%'
+    },
+    logoApp:{
+        width: 150,
+        height: 50,
+        marginTop: '8%'
+    },
+    header:{
+        width: '100%',
+        alignItems: 'center',
     }
 })

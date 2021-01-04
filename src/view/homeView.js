@@ -1,13 +1,28 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, ScrollView, RefreshControl, Alert } from 'react-native';
 import {Feather} from '@expo/vector-icons'
-import BottomSheet from 'reanimated-bottom-sheet'
-import Animated from 'react-native-reanimated'
+import {Modalize} from 'react-native-modalize'
 
 export default function Home() {
 
 const [ refresh, setRefresh ] = useState(false)
 const [ pesquisa, setPesquisa ] = useState(null)
+const modalizeRef = useRef(null)
+
+/*function openModal(){
+    modalizeRef.current?.open();
+
+     <Modalize
+        ref={modalizeRef}
+        snapPoint={500}
+        modalHeight={500}
+    >
+        <TouchableOpacity style={{alignSelf: 'center', backgroundColor: '#7DB1FF', width: 100, height: 50}}>
+            <Text style={{fontFamily: 'Montserrat_700Bold', fontSize: 25}}>Teste</Text>
+        </TouchableOpacity>
+
+    </Modalize>
+}*/
 
 function teste(){
     setRefresh(true)
@@ -16,17 +31,14 @@ function teste(){
     }catch(err){
         setRefresh(false)
     }
-
-
 }
+
+
 
  return (
    <View style={{backgroundColor: '#E5EEFF', flex: 1}}>
+      
        <View style={styles.header}>
-        <Image
-            style={styles.logoApp}
-            source={require('../../assets/logoAmazon.png')}
-        />
         <View style={styles.pesquisaView}>
         <TextInput
             style={styles.pesquisa}
@@ -220,9 +232,12 @@ function teste(){
     </ScrollView>
 
     </View>
+
+    
     
        
    </View>
+   
   );
 }
 
@@ -346,7 +361,7 @@ const styles = StyleSheet.create({
         marginBottom: '15%'
     },
     principal:{
-        paddingBottom: '40%'
+        paddingBottom: '20%'
     },
     logoApp:{
         width: 150,

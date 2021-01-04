@@ -17,16 +17,13 @@ const icons = {
     Home: {
         name: 'home'
     },
-    YourBooks:{
+    Biblioteca:{
         name: 'bookmark'
     },
-    newBook:{
-        name: 'plus-circle'
-    },
-    notification:{
+    Avisos:{
         name: 'bell'
     },
-    user:{
+    Perfil:{
         name: 'user'
     }
 }
@@ -36,9 +33,9 @@ export default function AppRoutes(){
         <NavigationContainer>
             <AppStack.Navigator initialRouteName="Home">
                 <AppStack.Screen name="Home" component={TabNav} options={{ headerShown: false}}/>
-                <AppStack.Screen name="YourBooks" component={TabNav} options={{ headerShown: false}}/>
-                <AppStack.Screen name="notification" component={TabNav} options={{ headerShown: false}}/>
-                <AppStack.Screen name="user" component={TabNav} options={{ headerShown: false}}/>
+                <AppStack.Screen name="Biblioteca" component={TabNav} options={{ headerShown: false}}/>
+                <AppStack.Screen name="Avisos" component={TabNav} options={{ headerShown: false}}/>
+                <AppStack.Screen name="Perfil" component={TabNav} options={{ headerShown: false}}/>
             </AppStack.Navigator>
         </NavigationContainer>
     )
@@ -51,12 +48,12 @@ function TabNav(){
       screenOptions={({route}) => ({
         tabBarIcon: ({ color, size }) => {
           const {name} = icons[route.name]
-          return <Feather name={name} color={color} size={30}/>
+          return <Feather name={name} color={color} size={25}/>
         }
       })}
       tabBarOptions={{
         style:{
-          height: 60,
+          height: 55,
           position: 'absolute',
           backgroundColor: '#8CA5FF',
         },
@@ -65,9 +62,9 @@ function TabNav(){
 
       }}>
             <Tabs.Screen name="Home" component={Home}/>
-            <Tabs.Screen name="YourBooks" component={YourBooks}/>
-            <Tabs.Screen name="notification" component={notification}/>
-            <Tabs.Screen name="user" component={user}/>
+            <Tabs.Screen name="Biblioteca" component={YourBooks}/>
+            <Tabs.Screen name="Avisos" component={notification}/>
+            <Tabs.Screen name="Perfil" component={user}/>
         </Tabs.Navigator>
     )
 }

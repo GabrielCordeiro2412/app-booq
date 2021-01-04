@@ -25,20 +25,6 @@ export default function notification() {
          style={styles.scroll}>
 
        <Text style={styles.txvNotificacoes}>Notificações</Text>
-
-       <View style={styles.viewNotify}>
-          <TouchableOpacity>
-            <Image
-            source={require('../../assets/error.png')}
-            style={styles.imgError}
-            />
-          </TouchableOpacity>
-          <Text style={styles.descNotify}>shake baixou seu livro</Text>
-          <Image
-          source={require('../../assets/cortico.jpg')}
-          style={styles.imgLivro}
-          />
-       </View>
       
        <View style={styles.viewNotify}>
           <TouchableOpacity>
@@ -48,48 +34,6 @@ export default function notification() {
             />
           </TouchableOpacity>
           <Text style={styles.descNotify}>Cordsx baixou seu livro</Text>
-          <Image
-          source={require('../../assets/cortico.jpg')}
-          style={styles.imgLivro}
-          />
-       </View>
-
-       <View style={styles.viewNotify}>
-          <TouchableOpacity>
-            <Image
-            source={require('../../assets/error.png')}
-            style={styles.imgError}
-            />
-          </TouchableOpacity>
-          <Text style={styles.descNotify}>David baixou seu livro</Text>
-          <Image
-          source={require('../../assets/cortico.jpg')}
-          style={styles.imgLivro}
-          />
-       </View>
-
-       <View style={styles.viewNotify}>
-          <TouchableOpacity>
-            <Image
-            source={require('../../assets/error.png')}
-            style={styles.imgError}
-            />
-          </TouchableOpacity>
-          <Text style={styles.descNotify}>Pedro baixou seu livro</Text>
-          <Image
-          source={require('../../assets/cortico.jpg')}
-          style={styles.imgLivro}
-          />
-       </View>
-      
-       <View style={styles.viewNotify}>
-          <TouchableOpacity>
-            <Image
-            source={require('../../assets/error.png')}
-            style={styles.imgError}
-            />
-          </TouchableOpacity>
-          <Text style={styles.descNotify}>Nunes baixou seu livro</Text>
           <Image
           source={require('../../assets/cortico.jpg')}
           style={styles.imgLivro}

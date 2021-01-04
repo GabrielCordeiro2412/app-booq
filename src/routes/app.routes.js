@@ -56,16 +56,13 @@ function TabNav(){
       })}
       tabBarOptions={{
         style:{
-          height: 50,
-          borderTopLeftRadius: 10,
-          borderTopRightRadius: 10,
+          height: 60,
           position: 'absolute',
-          backgroundColor: '#8CA5FF'
+          backgroundColor: '#8CA5FF',
         },
         activeTintColor: '#fff',
         inactiveTintColor: '#000',
-        showLabel: false
-      
+
       }}>
             <Tabs.Screen name="Home" component={Home}/>
             <Tabs.Screen name="YourBooks" component={YourBooks}/>

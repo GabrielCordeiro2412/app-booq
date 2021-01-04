@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
         marginBottom: '15%'
     },
     principal:{
-        paddingBottom: '20%'
+        paddingBottom: '40%'
     },
     logoApp:{
         width: 150,

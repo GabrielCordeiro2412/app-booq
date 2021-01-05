@@ -23,13 +23,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.cordsbiel.booq"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "androidNavigationBar":{
-      "backgroundColor":  "#8CA5FF"
+    "androidNavigationBar": {
+      "backgroundColor": "#8CA5FF"
     }
   }
 }

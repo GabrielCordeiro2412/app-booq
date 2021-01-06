@@ -14,7 +14,7 @@ const Tabs = createBottomTabNavigator();
 const AppStack = createStackNavigator();
 
 const icons = {
-    Home: {
+    Início: {
         name: 'home'
     },
     Biblioteca:{
@@ -31,8 +31,8 @@ const icons = {
 export default function AppRoutes(){
     return(
         <NavigationContainer>
-            <AppStack.Navigator initialRouteName="Home">
-                <AppStack.Screen name="Home" component={TabNav} options={{ headerShown: false}}/>
+            <AppStack.Navigator initialRouteName="Início">
+                <AppStack.Screen name="Início" component={TabNav} options={{ headerShown: false}}/>
                 <AppStack.Screen name="Biblioteca" component={TabNav} options={{ headerShown: false}}/>
                 <AppStack.Screen name="Avisos" component={TabNav} options={{ headerShown: false}}/>
                 <AppStack.Screen name="Perfil" component={TabNav} options={{ headerShown: false}}/>
@@ -44,7 +44,7 @@ export default function AppRoutes(){
 function TabNav(){
     return(
         <Tabs.Navigator
-        initialRouteName="Home" 
+        initialRouteName="Início" 
       screenOptions={({route}) => ({
         tabBarIcon: ({ color, size }) => {
           const {name} = icons[route.name]
@@ -61,7 +61,7 @@ function TabNav(){
         inactiveTintColor: '#000',
 
       }}>
-            <Tabs.Screen name="Home" component={Home}/>
+            <Tabs.Screen name="Início" component={Home}/>
             <Tabs.Screen name="Biblioteca" component={YourBooks}/>
             <Tabs.Screen name="Avisos" component={notification}/>
             <Tabs.Screen name="Perfil" component={user}/>

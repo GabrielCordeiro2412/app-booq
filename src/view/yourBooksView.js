@@ -28,13 +28,20 @@ function teste(){
          <View style={styles.favorites}>
             <Text style={styles.txvTitle}>Livros Favoritos</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-               <View>
+               <View style={{paddingLeft: 5}}>
                   <TouchableOpacity style={styles.livro}>
                      <Image
                      source={require('../../assets/livro.jpg')}
                      style={styles.imgLivro}
                      />
                   </TouchableOpacity>
+                  <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                  </View>
                </View>
 
                <View>
@@ -44,6 +51,13 @@ function teste(){
                      style={styles.imgLivro}
                      />
                   </TouchableOpacity>
+                  <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                  </View>
                </View>
 
                <View>
@@ -53,6 +67,13 @@ function teste(){
                      style={styles.imgLivro}
                      />
                   </TouchableOpacity>
+                  <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                  </View>
                </View>
 
             </ScrollView>
@@ -61,13 +82,20 @@ function teste(){
       <View style={styles.jaLidos}>
          <Text style={styles.txvTitle}>Já Lidos</Text>
          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-               <View>
+               <View style={{paddingLeft: 5}}>
                   <TouchableOpacity style={styles.livro}>
                      <Image
                      source={require('../../assets/livro.jpg')}
                      style={styles.imgLivro}
                      />
                   </TouchableOpacity>
+                  <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                  </View>
                </View>
 
                <View>
@@ -77,6 +105,13 @@ function teste(){
                      style={styles.imgLivro}
                      />
                   </TouchableOpacity>
+                  <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                  </View>
                </View>
 
 
@@ -95,14 +130,15 @@ function teste(){
 const styles = StyleSheet.create({
    favorites:{
       alignSelf: 'center',
-      width: '90%',
-      marginBottom: '10%',
-      marginTop: '8%'
+      marginTop: '8%',
+      width: '100%',
+      marginLeft: '10%',
+      paddingRight: '5%',
    },
    txvTitle:{
       fontFamily: 'Montserrat_700Bold',
       fontSize: 30,
-      marginBottom: 10,
+      marginBottom: '2%'
    },
    livro:{
       backgroundColor: '#7DB1FF',
@@ -122,7 +158,6 @@ const styles = StyleSheet.create({
       shadowRadius: 10,
       elevation: 4,
       marginBottom: 10,
-      marginLeft: 5
   },
   imgLivro:{
       width: '100%',
@@ -134,6 +169,9 @@ const styles = StyleSheet.create({
    },
    jaLidos:{
       alignSelf: 'center',
-      width: '90%',
+        marginTop: '2%',
+        width: '100%',
+        marginLeft: '10%',
+        paddingRight: '5%',
    }
 })

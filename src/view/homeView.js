@@ -106,135 +106,95 @@ function teste(){
                             <Text style={{fontFamily: 'Montserrat_700Bold', marginTop: 5}}>Ficção</Text>
                         </TouchableOpacity>
                     </View>
+                    <View>
+                        <TouchableOpacity style={styles.btnCategoria}>
+                            <Image
+                                source={require('../../assets/download.png')}
+                                style={styles.imgCategoria}
+                            />
+                            <Text style={{fontFamily: 'Montserrat_700Bold', marginTop: 5}}>Cursos</Text>
+                        </TouchableOpacity>
+                    </View>
                 </ScrollView>
             </View>
         <View style={styles.maisLidos}>
-        <Text style={styles.txvLidos}>Novidades</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/livro.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/cortico.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/crise.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/livro.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-        </ScrollView>
-    </View>
-    <View style={styles.maisLidos}>
-        <Text style={styles.txvLidos}>Os Mais Lidos</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/crise.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/cortico.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/livro.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/crise.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-        </ScrollView>
-    </View>
+                <Text style={styles.txvLidos}>Novidades</Text>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                    <View style={{paddingLeft: 5}}>
+                        <TouchableOpacity style={styles.livro}>
+                            <Image
+                            source={require('../../assets/livro.jpg')}
+                            style={styles.imgLivro}
+                            />
+                        </TouchableOpacity>
+                        <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Dom Casmurro
+                                </Text>
+                            </View>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_400Regular'}}>
+                                    R$10,20
+                                </Text>
+                            </View>
+                        </View>
+                        
+                    </View>
 
-    <View style={styles.maisLidos}>
-        <Text style={styles.txvLidos}>Os Mais Lidos</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/crise.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
+                    <View style={{paddingLeft: 5}}>
+                        <TouchableOpacity style={styles.livro}>
+                            <Image
+                            source={require('../../assets/crise.jpg')}
+                            style={styles.imgLivro}
+                            />
+                        </TouchableOpacity>
+                        <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    Crise nas Infinitas Terras
+                                </Text>
+                            </View>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_400Regular'}}>
+                                    R$10,20
+                                </Text>
+                            </View>
+                        </View>
+                        
+                    </View>
+
+                    <View style={{paddingLeft: 5}}>
+                        <TouchableOpacity style={styles.livro}>
+                            <Image
+                            source={require('../../assets/cortico.jpg')}
+                            style={styles.imgLivro}
+                            />
+                        </TouchableOpacity>
+                        <View style={{width: 120, height: 70}}>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_600SemiBold'}}>
+                                    O Cortiço
+                                </Text>
+                            </View>
+                            <View style={{width: 120}}>
+                                <Text style={{width: 120, fontFamily: 'Montserrat_400Regular'}}>
+                                    R$10,20
+                                </Text>
+                            </View>
+                        </View>
+                        
+                    </View>
+                </ScrollView>
             </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/cortico.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/livro.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-            <View>
-                <TouchableOpacity style={styles.livro}>
-                    <Image
-                    source={require('../../assets/crise.jpg')}
-                    style={styles.imgLivro}
-                    />
-                </TouchableOpacity>
-            </View>
-        </ScrollView>
-    </View>
-    
 
         </View>
             )
         }
 
-
-    
-    
     </ScrollView>
 
     </View>
-
-    
-    
        
    </View>
    
@@ -344,7 +304,6 @@ const styles = StyleSheet.create({
         shadowRadius: 10,
         elevation: 4,
         marginBottom: 7,
-        marginLeft: 5
     },
     imgLivro:{
         width: 120,
